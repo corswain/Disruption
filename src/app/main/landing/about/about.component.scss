@@ -1,0 +1,17 @@
+@import "src/@fuse/scss/fuse";
+$font: rgba(0, 0, 0, 0.75);
+:host {
+    section {
+        width: 100%;
+        background: white !important;
+        color: $font;
+        .content {
+            position: relative;
+            .widget {
+                height: auto;
+                min-height: calc(100vh - 65px);
+                z-index: 2;
+            }
+        }
+    }
+}

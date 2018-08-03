@@ -1,0 +1,167 @@
+@import "src/@fuse/scss/fuse";
+$font: white;
+:host {
+    section {
+        position: relative;
+        width: 100%;
+        background: mat-color($mat-indigo, 900) !important;
+        color: $font;
+        .content {
+            .widget {
+                height: auto;
+                min-height: calc(100vh - 65px);
+                z-index: 2;
+                @include media-breakpoint-down('sm') {
+                    min-height: auto;
+                }
+            }
+        }
+    }
+    .token-progress-container {
+        position: relative;
+        height: auto;
+        width: 100%;
+        .token-progress {
+            position: absolute;
+            top: 36px;
+            background: white;
+            height: 24px;
+            padding: 2px;
+            width: inherit;
+            mat-progress-bar {
+                height: 20px;
+            }
+        }
+        .token-target {
+            position: absolute;
+            top: 64px;
+            left: 0;
+        }
+        .token-marker-label-20 {
+            position: absolute;
+            top: 0;
+            left: 10%;
+        }
+        .token-marker-label-50 {
+            position: absolute;
+            top: 0;
+            left: 40%;
+        }
+        .token-marker-label-80 {
+            position: absolute;
+            top: 0;
+            left: 74%;
+        }
+        .token-marker {
+            border-left: 2px solid white;
+            height: 16px;
+            position: absolute;
+            top: 20px;
+        }
+        .mark-20 {
+            left: 20%;
+        }
+        .mark-50 {
+            left: 50%;
+        }
+        .mark-80 {
+            left: 80%;
+        }
+    }
+}
+
+// Background ripple effects
+@keyframes k1 {
+    0% {
+        transform: scale(0.01);
+        opacity: 0
+    }
+    33% {
+        transform: scale(0.4);
+        opacity: 0.8
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0
+    }
+}
+
+.bg-ripple-animation {
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.left-bottom-ripples {
+    margin-bottom: -80vh;
+    margin-left: -80vh;
+    width: 160vh;
+    height: 160vh;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.intro-video-bg-ripples {
+    margin-top: 21vh;
+    margin-left: -6vh;
+    width: 140vh;
+    height: 140vh;
+    position: absolute;
+    left: 0;
+}
+
+.top-right-ripples {
+    margin-top: -80vh;
+    margin-right: -80vh;
+    width: 160vh;
+    height: 160vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.ripples {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(ellipse at center, rgba(182, 225, 235, 0) 0%, rgba(182, 225, 235, 0.05) 40%, rgba(182, 225, 235, 0.4) 100%);
+        border: .5px solid white;
+        border-radius: 50%;
+        opacity: 0;
+        transform: scale(1);
+        animation-name: k1;
+        animation-duration: 6s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(ellipse at center, rgba(182, 225, 235, 0) 0%, rgba(182, 225, 235, 0.05) 40%, rgba(182, 225, 235, 0.4) 100%);
+        border: .5px solid white;
+        border-radius: 50%;
+        opacity: 0;
+        animation-name: k1;
+        animation-duration: 6s;
+        animation-delay: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}

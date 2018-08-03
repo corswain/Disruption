@@ -1,0 +1,15 @@
+<!-- PROGRESS BAR -->
+<fuse-progress-bar></fuse-progress-bar>
+<!-- / PROGRESS BAR -->
+
+<!-- LANDING -->
+<ng-container *ngIf="isLanding">
+    <router-outlet></router-outlet>
+</ng-container>
+<!-- / LANDING -->
+
+<!-- DASHBOARD / ADMIN -->
+<ng-container *ngIf="!isLanding">
+    <dsrpt-layout></dsrpt-layout>
+</ng-container>
+<!-- / DASHBOARD / ADMIN -->

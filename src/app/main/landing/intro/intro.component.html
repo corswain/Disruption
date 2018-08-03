@@ -1,0 +1,44 @@
+<section id="landing-intro">
+    <div class="content p-24" fxLayout="column" fxLayoutAlign="start" fxLayout.gt-sm="row" fxLayoutAlign.gt-sm="start start"
+        fxLayoutGap="12px">
+
+        <div class="widget pt-32" [ngClass.gt-sm]="'widget pt-72 pb-128 pl-128'" fxFlex="50" fxLayoutAlign="center start" fxLayoutAlign.gt-sm="center center">
+            <div fxLayout="column" fxLayoutAlign="start start">
+                <span class="mat-display-3">DISRUPTION ICO is Lorem ipsum dolor sit amet !</span>
+                <span class="mat-subheading-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit autem laborum quaerat dolor iusto odit cumque
+                    quas impedit labore rem!</span>
+            </div>
+        </div>
+
+        <div class="widget pb-72" [ngClass.gt-sm]="'widget pb-96'" fxFlex="50" fxLayoutAlign="center start" fxLayoutAlign.gt-sm="center center">
+            <div fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="12px">
+                <h1 class="mb-32">Token Sale is Live !</h1>
+                <h3>Token Sale Ends in:</h3>
+                <fuse-countdown eventDate="2019-07-28"></fuse-countdown>
+                <button mat-raised-button color="accent" class="w-100-p">
+                    <span>Buy Tokens</span>
+                </button>
+
+                <div class="token-progress-container mt-16">
+                    <div class="token-marker-label-20">Pre-Sale</div>
+                    <div class="token-marker mark-20"></div>
+                    <div class="token-marker-label-50">Soft Cap</div>
+                    <div class="token-marker mark-50"></div>
+                    <div class="token-marker-label-80">Bonus</div>
+                    <div class="token-marker mark-80"></div>
+                    <div class="token-progress">
+                        <mat-progress-bar mode="determinate" [value]="targetRaised" color="accent"></mat-progress-bar>
+                    </div>
+                    <div class="token-target">{{ targetRaised }}% target raised</div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="bg-ripple-animation">
+        <div class="left-bottom-ripples">
+            <div class="ripples"></div>
+        </div>
+    </div>
+</section>

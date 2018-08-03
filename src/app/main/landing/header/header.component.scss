@@ -1,0 +1,35 @@
+@import "src/@fuse/scss/fuse";
+:host {
+    position: relative;
+    display: flex;
+    flex: 0 0 auto;
+    z-index: 4;
+    .mat-toolbar {
+        padding: 0;
+        position: relative;
+        background: mat-color($mat-indigo, 900);
+        color: inherit;
+        .logo {
+            display: flex;
+            align-items: center;
+            img {
+                width: 90px;
+            }
+            h1 {
+                color: white !important;
+            }
+        }
+    }
+    .fixed-header {
+        background: mat-color($accent, 900) !important;
+        position: fixed !important;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+    .text {
+        font-size: 14px;
+        font-weight: 500;
+        color: white;
+    }
+}
