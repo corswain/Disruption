@@ -36,6 +36,7 @@ export class HeaderComponent implements OnInit {
       { name: 'Whitepaper', id: 'landing-whitepaper' },
       { name: 'Token', id: 'landing-token' },
       { name: 'Roadmap', id: 'landing-roadmap' },
+      { name: 'Team', id: 'landing-team' },
       { name: 'FAQ', id: 'landing-faq' },
       { name: 'Contact', id: 'landing-contact' }
     ];
