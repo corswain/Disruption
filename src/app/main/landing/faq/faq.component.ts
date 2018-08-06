@@ -34,7 +34,7 @@ export class FaqComponent implements OnInit, OnDestroy {
     this._unsubscribeAll = new Subject();
   }
 
-  // -----------------------------------------------------------------------------------------------------
+  // ------------------------ -----------------------------------------------------------------------------
   // @ Lifecycle hooks
   // -----------------------------------------------------------------------------------------------------
 
@@ -45,7 +45,6 @@ export class FaqComponent implements OnInit, OnDestroy {
     this._landingService.onFaqsChanged
       .pipe(takeUntil(this._unsubscribeAll))
       .subscribe((response) => {
-        console.log(response);
         this.faqs = response;
         this.faqsFiltered = response;
       });
