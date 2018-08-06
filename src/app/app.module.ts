@@ -1,5 +1,7 @@
 import 'hammerjs';
 
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { MatButtonModule, MatIconModule } from '@angular/material';
@@ -7,6 +9,7 @@ import { MatMomentDateModule } from '@angular/material-moment-adapter';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from '@app/app-routing.module';
+import { FakeDbService } from '@app/fake-db/fake-db.service';
 import { CoreModule } from '@core/core.module';
 import { FuseProgressBarModule } from '@fuse/components';
 import { FuseModule } from '@fuse/fuse.module';
@@ -27,6 +30,10 @@ import { AppComponent } from './app.component';
     CoreModule.forRoot(),
 
     TranslateModule.forRoot(),
+    HttpClientInMemoryWebApiModule.forRoot(FakeDbService, {
+      delay: 0,
+      passThruUnknownUrl: true
+    }),
 
     // Material moment date module
     MatMomentDateModule,
