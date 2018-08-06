@@ -13,7 +13,6 @@ import { FuseModule } from '@fuse/fuse.module';
 import { FuseSharedModule } from '@fuse/shared.module';
 import { mainConfig } from '@layout/layout.config';
 import { LayoutModule } from '@layout/layout.module';
-import { SampleModule } from '@main/sample/sample.module';
 import { TranslateModule } from '@ngx-translate/core';
 
 import { AppComponent } from './app.component';
@@ -42,8 +41,7 @@ import { AppComponent } from './app.component';
     FuseSharedModule,
 
     // App modules
-    LayoutModule,
-    SampleModule
+    LayoutModule
   ],
   bootstrap: [AppComponent]
 })

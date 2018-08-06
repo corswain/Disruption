@@ -1,8 +1,23 @@
+@import "src/@fuse/scss/fuse";
+$font: white;
+$fontTitle: white;
+$background: mat-color($mat-indigo, 900);
 :host {
     section {
-        background: green;
-        width: 100%;
-        min-height: 200px;
-        margin: 0;
+        color: $font;
+        background: $background;
+        .content-title {
+            .title {
+                color: $fontTitle;
+            }
+            .underline {
+                border-bottom: 4px solid $fontTitle;
+            }
+        }
+        .content-container {
+            .title-secondary {
+                color: $fontTitle;
+            }
+        }
     }
 }
