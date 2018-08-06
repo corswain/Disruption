@@ -3,7 +3,7 @@ import { SharedModule } from 'app/shared/shared.module';
 import { NgModule } from '@angular/core';
 import {
     MatButtonModule, MatCardModule, MatExpansionModule, MatIconModule, MatInputModule,
-    MatMenuModule, MatProgressBarModule, MatToolbarModule
+    MatListModule, MatMenuModule, MatProgressBarModule, MatToolbarModule
 } from '@angular/material';
 import { RouterModule, Routes } from '@angular/router';
 import { FuseCountdownModule } from '@fuse/components';
@@ -13,6 +13,7 @@ import { NguCarouselModule } from '@ngu/carousel';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { FaqComponent } from './faq/faq.component';
+import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { IntroComponent } from './intro/intro.component';
 import { LandingComponent } from './landing.component';
@@ -21,7 +22,6 @@ import { RoadmapComponent } from './roadmap/roadmap.component';
 import { TeamComponent } from './team/team.component';
 import { TokenComponent } from './token/token.component';
 import { WhitepaperComponent } from './whitepaper/whitepaper.component';
-import { FooterComponent } from './footer/footer.component';
 
 const routes: Routes = [
   {
@@ -42,6 +42,7 @@ const routes: Routes = [
 
     MatIconModule,
     MatInputModule,
+    MatListModule,
     MatButtonModule,
     MatCardModule,
     MatMenuModule,
