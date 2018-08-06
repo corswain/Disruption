@@ -1,3 +1,54 @@
 <section id="landing-team">
 
+    <div class="content-container p-12" [ngClass.gt-sm]="'content-container p-64'" fxLayout="column" fxLayoutGap="8px" fxLayoutGap.gt-sm="12px">
+
+        <div class="content-title mt-36 mb-36" fxLayout="column" fxLayoutAlign="start">
+            <span class="title">Team</span>
+            <span class="underline"></span>
+        </div>
+
+        <div class="content mb-36">
+            <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, error.</span>
+        </div>
+
+        <div class="content">
+            <ngu-carousel [inputs]="carouselOptions">
+                <ngu-item NguCarouselItem *ngFor="let tm of testimonials">
+                    <mat-card class="p-0 m-8">
+                        <mat-card-content>
+                            <div class="user-detail" fxLayout="row">
+                                <span class="toolbar-avatar md user-photo">
+                                    <img [src]="tm.photo" alt="">
+                                </span>
+                                <div fxFlex fxLayout="column" fxLayoutGap="2px">
+                                    <span class="user-title">{{tm.title}}</span>
+                                    <span class="user-subtitle">{{tm.subtitle}}</span>
+                                    <div class="user-socials" fxFlex fxLayout="row" fxLayoutAlign="end end" fxLayoutGap="4px">
+                                        <a>
+                                            <img src="assets/images/social/linkedin.svg" alt="">
+                                        </a>
+                                        <a>
+                                            <img src="assets/images/social/google-plus.svg" alt="">
+                                        </a>
+                                        <a>
+                                            <img src="assets/images/social/facebook.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-card-content>
+                    </mat-card>
+                </ngu-item>
+                <button mat-fab NguCarouselPrev class="carousel-left">
+                    <mat-icon>keyboard_arrow_left</mat-icon>
+                </button>
+                <button mat-fab NguCarouselNext class="carousel-right">
+                    <mat-icon>keyboard_arrow_right</mat-icon>
+                </button>
+            </ngu-carousel>
+
+        </div>
+
+    </div>
+
 </section>

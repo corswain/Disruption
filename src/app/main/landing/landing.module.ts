@@ -2,12 +2,13 @@ import { SharedModule } from 'app/shared/shared.module';
 
 import { NgModule } from '@angular/core';
 import {
-    MatButtonModule, MatExpansionModule, MatIconModule, MatInputModule, MatMenuModule,
-    MatProgressBarModule, MatToolbarModule
+    MatButtonModule, MatCardModule, MatExpansionModule, MatIconModule, MatInputModule,
+    MatMenuModule, MatProgressBarModule, MatToolbarModule
 } from '@angular/material';
 import { RouterModule, Routes } from '@angular/router';
 import { FuseCountdownModule } from '@fuse/components';
 import { FuseSharedModule } from '@fuse/shared.module';
+import { NguCarouselModule } from '@ngu/carousel';
 
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
@@ -20,6 +21,7 @@ import { RoadmapComponent } from './roadmap/roadmap.component';
 import { TeamComponent } from './team/team.component';
 import { TokenComponent } from './token/token.component';
 import { WhitepaperComponent } from './whitepaper/whitepaper.component';
+import { FooterComponent } from './footer/footer.component';
 
 const routes: Routes = [
   {
@@ -36,9 +38,12 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     SharedModule,
 
+    NguCarouselModule,
+
     MatIconModule,
     MatInputModule,
     MatButtonModule,
+    MatCardModule,
     MatMenuModule,
     MatProgressBarModule,
     MatToolbarModule,
@@ -57,7 +62,8 @@ const routes: Routes = [
     TeamComponent,
     FaqComponent,
     ContactComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   providers: [LandingService]
 })

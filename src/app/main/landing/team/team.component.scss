@@ -1,8 +1,81 @@
+@import 'src/@fuse/scss/fuse';
+$font: rgba(0, 0, 0, 0.75);
+$fontTitle: rgba(0, 0, 0, 0.6);
+$background: white;
 :host {
     section {
-        background: indigo;
-        width: 100%;
-        min-height: 200px;
-        margin: 0;
+        color: $font;
+        background: $background;
+        .content-title {
+            .title {
+                color: $fontTitle;
+            }
+            .underline {
+                border-bottom: 4px solid $fontTitle;
+            }
+        }
+        .content-container {
+            .title-secondary {
+                color: $fontTitle;
+            }
+        }
+    }
+}
+
+.ngucarousel {
+    position: relative;
+    margin: 0 auto;
+}
+
+.ngucarousel-inner {
+    padding: 8px 0 18px;
+}
+
+.mat-fab {
+    &.carousel-right,
+    &.carousel-left {
+        position: absolute !important;
+        bottom: 15px;
+    }
+}
+
+.carousel-left {
+    left: 0;
+}
+
+.carousel-right {
+    right: 0;
+}
+
+ngu-item {
+    .mat-card {
+        .mat-card-content {
+            position: relative;
+            background: mat-color($mat-indigo, 900);
+            height: auto;
+        }
+        .user-detail {
+            width: 100%;
+            padding: 10px;
+            .user-photo {
+                margin-right: 8px;
+            }
+            .user-title {
+                font-size: 20px;
+                font-weight: 500;
+                color: white;
+            }
+            .user-subtitle {
+                font-size: 14px;
+                font-weight: 300;
+                color: white;
+            }
+            .user-socials {
+                img {
+                    width: 36px;
+                    color: white;
+                }
+            }
+        }
     }
 }
