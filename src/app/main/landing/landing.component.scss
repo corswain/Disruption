@@ -8,4 +8,33 @@ dsrpt-landing {
     width: 100%;
     margin: 0;
     padding: 0;
+    section {
+        width: 100%;
+        .content-title {
+            height: auto;
+            .title {
+                font-size: 48px;
+                font-weight: 500;
+            }
+            .underline {
+                width: 70px;
+            }
+        }
+        .content-container {
+            height: auto;
+            min-height: calc(100vh - 65px);
+            .content {
+                position: relative;
+                z-index: 2;
+                .title {
+                    font-size: 32px;
+                    font-weight: 400;
+                }
+                iframe {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
 }

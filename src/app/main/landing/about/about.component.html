@@ -1,14 +1,88 @@
-<section id="landing-about">
+<section>
 
-    <div class="content p-24" fxLayout="column" fxLayoutAlign="start" fxLayout.gt-sm="row" fxLayoutAlign.gt-sm="start start"
-        fxLayoutGap="12px">
+    <div class="content-container p-12" [ngClass.gt-sm]="'content-container p-64'" fxLayout="column" fxLayoutGap="8px" fxLayoutGap.gt-sm="12px">
 
-        <div class="widget pt-32" [ngClass.gt-sm]="'widget pt-32 pb-128 pl-128'" fxFlex fxLayoutAlign="center start" fxLayoutAlign.gt-sm="center center">
-            <div fxLayout="column" fxLayoutAlign="start start">
-                <span class="mat-display-3">DISRUPTION ICO is Lorem ipsum dolor sit amet !</span>
-                <span class="mat-subheading-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit autem laborum quaerat dolor iusto odit cumque
-                    quas impedit labore rem!</span>
+        <div class="content-title pt-48" fxLayout="column" fxLayoutAlign="start">
+            <span class="title">About</span>
+            <span class="underline"></span>
+        </div>
+
+        <div fxLayout="column" fxLayoutGap="12px" fxLayout.gt-sm="row">
+
+            <div class="content mt-32" fxFlex="50">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde facilis repellat provident deleniti rerum,
+                    cum cumque aut magnam dignissimos. Inventore esse earum iure placeat accusamus quaerat in minima facilis
+                    ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde facilis repellat provident deleniti
+                    rerum, cum cumque aut magnam dignissimos. Inventore esse earum iure placeat accusamus quaerat in minima
+                    facilis ipsam.
+                </p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde facilis repellat provident deleniti rerum,
+                    cum cumque aut magnam dignissimos. Inventore esse earum iure placeat accusamus quaerat in minima facilis
+                    ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde facilis repellat provident deleniti
+                    rerum, cum cumque aut magnam dignissimos. Inventore esse earum iure placeat accusamus quaerat in minima
+                    facilis ipsam.
+                </p>
+
             </div>
+
+            <div class="content p-0" [ngClass.gt-sm]="'content pl-16 pt-32px'" fxFlex="50">
+                <iframe [src]='videoUrl' frameborder="0" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+        <div fxLayout="column" fxLayoutGap="12px" fxLayout.gt-sm="row">
+
+            <div class="content" fxLayout="column" fxFlex="50">
+
+                <div class="pt-64 pb-32">
+                    <span class="title">Problems</span>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde facilis repellat provident deleniti rerum,
+                    cum cumque aut magnam dignissimos. Inventore esse earum iure placeat accusamus quaerat in minima facilis
+                    ipsam?
+                </p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde facilis repellat provident deleniti rerum,
+                    cum cumque aut magnam dignissimos. Inventore esse earum iure placeat accusamus quaerat in minima facilis
+                    ipsam?
+                </p>
+
+            </div>
+
+            <div class="content" fxFlex="50" fxLayoutAlign="center">
+                <img src="assets/images/logos/placeholder.png">
+            </div>
+
+        </div>
+
+        <div fxLayout="column" fxLayoutGap="12px" fxLayout.gt-sm="row">
+
+            <div class="content" fxFlex="50" fxLayoutAlign="center" fxFlexOrder="2" fxFlexOrder.gt-sm="1">
+                <img src="assets/images/logos/placeholder.png">
+            </div>
+
+            <div class="content" fxLayout="column" fxFlex="50" fxFlexOrder="1" fxFlexOrder.gt-sm="2">
+
+                <div class="pt-64 pb-32">
+                    <span class="title">Solutions</span>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde facilis repellat provident deleniti rerum,
+                    cum cumque aut magnam dignissimos. Inventore esse earum iure placeat accusamus quaerat in minima facilis
+                    ipsam?
+                </p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde facilis repellat provident deleniti rerum,
+                    cum cumque aut magnam dignissimos. Inventore esse earum iure placeat accusamus quaerat in minima facilis
+                    ipsam?
+                </p>
+
+            </div>
+
         </div>
 
     </div>
