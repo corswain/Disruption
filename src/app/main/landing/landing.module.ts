@@ -1,7 +1,9 @@
 import { SharedModule } from 'app/shared/shared.module';
 
 import { NgModule } from '@angular/core';
-import { MatButtonModule, MatIconModule, MatMenuModule, MatToolbarModule, MatProgressBarModule } from '@angular/material';
+import {
+    MatButtonModule, MatIconModule, MatMenuModule, MatProgressBarModule, MatToolbarModule
+} from '@angular/material';
 import { RouterModule, Routes } from '@angular/router';
 import { FuseCountdownModule } from '@fuse/components';
 import { FuseSharedModule } from '@fuse/shared.module';
