@@ -18,6 +18,11 @@ $background: white;
             .title-secondary {
                 color: $fontTitle;
             }
+            .content {
+                iframe {
+                    min-height: 400px;
+                }
+            }
         }
     }
 }
