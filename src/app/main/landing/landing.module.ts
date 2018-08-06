@@ -2,8 +2,8 @@ import { SharedModule } from 'app/shared/shared.module';
 
 import { NgModule } from '@angular/core';
 import {
-    MatButtonModule, MatExpansionModule, MatIconModule, MatMenuModule, MatProgressBarModule,
-    MatToolbarModule
+    MatButtonModule, MatExpansionModule, MatIconModule, MatInputModule, MatMenuModule,
+    MatProgressBarModule, MatToolbarModule
 } from '@angular/material';
 import { RouterModule, Routes } from '@angular/router';
 import { FuseCountdownModule } from '@fuse/components';
@@ -37,6 +37,7 @@ const routes: Routes = [
     SharedModule,
 
     MatIconModule,
+    MatInputModule,
     MatButtonModule,
     MatMenuModule,
     MatProgressBarModule,
