@@ -2,28 +2,48 @@
 
     <div class="content-container p-12" [ngClass.gt-sm]="'content-container p-64'" fxLayout="column" fxLayoutGap="8px" fxLayoutGap.gt-sm="12px">
 
-        <div fxLayout="column" fxLayoutGap="12px" fxLayoutGap.gt-sm="48px" fxLayout.gt-sm="row">
+        <div fxLayout="column" fxLayoutGap="12px" fxLayoutGap.gt-sm="64px" fxLayout.gt-sm="row">
 
-            <div class="content" fxLayoutAlign="center" fxLayoutAlign.gt-sm="start">
+            <div class="content" fxLayoutAlign="center" fxFlex="30" fxLayoutAlign.gt-sm="start" fxFlexOrder="2" fxFlexOrder.gt-sm="1">
                 <img src="assets/images/whitepaper.png">
             </div>
 
-            <div class="content" fxLayout="column" fxFlex="50">
+            <div class="content" fxLayout="column" fxFlex="70" fxFlexOrder="1" fxFlexOrder.gt-sm="2">
 
-                <div class="content-title" fxLayout="column" fxLayoutAlign="start">
+                <div class="content-title mb-32" fxLayout="column" fxLayoutAlign="start">
                     <span class="title">Whitepaper</span>
                     <span class="underline"></span>
                 </div>
-
-                <p class="mt-32">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde facilis repellat provident deleniti rerum,
-                    cum cumque aut magnam dignissimos. Inventore esse earum iure placeat accusamus quaerat in minima facilis
-                    ipsam?
-                </p>
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde facilis repellat provident deleniti rerum,
                     cum cumque aut magnam dignissimos. Inventore esse earum iure placeat accusamus quaerat in minima facilis
                     ipsam?
                 </p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium tenetur temporibus at ullam iusto veritatis
+                    quisquam harum perferendis! Eveniet atque magni, veniam natus enim saepe sapiente accusamus dolor rerum
+                    eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium tenetur temporibus at ullam
+                    iusto veritatis quisquam harum perferendis! Eveniet atque magni, veniam natus enim saepe sapiente accusamus
+                    dolor rerum eum.
+                </p>
+
+                <div class="mt-16 mb-16" [ngClass.gt-sm]="'mt-56 mb-32'" fxFlexLayout="column" fxLayoutGap="16px">
+
+                    <div fxFlexLayout="row" fxLayoutGap="16px">
+                        <button mat-fab color="accent">
+                            <mat-icon>cloud_download</mat-icon>
+                        </button>
+                        <span>Download Whitepaper</span>
+                    </div>
+
+                    <div class="mt-16" fxFlexLayout="row" fxLayoutGap="16px">
+                        <button mat-fab color="accent">
+                            <mat-icon>cloud_download</mat-icon>
+                        </button>
+                        <span>Token Sale Term &amp; Conditions</span>
+                    </div>
+
+                </div>
 
             </div>
 
