@@ -1,3 +1,35 @@
 <section id="landing-faq">
 
+    <div class="content-container p-12" [ngClass.gt-sm]="'content-container p-64'" fxLayout="column" fxLayoutGap="8px" fxLayoutGap.gt-sm="12px">
+
+        <div class="content-title mt-36 mb-36" fxLayout="column" fxLayoutAlign="start">
+            <span class="title">FAQs</span>
+            <span class="underline"></span>
+        </div>
+
+        <div class="content mat-white-bg p-16 mat-elevation-z7">
+            <div class="search mat-white-bg " flex fxLayout="row" fxLayoutAlign="start center">
+                <mat-icon>search</mat-icon>
+                <input [formControl]="searchInput" placeholder="Search in faqs.." fxFlex>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <mat-accordion class="faqs-accordion mat-elevation-z7">
+                <mat-expansion-panel *ngFor="let faq of faqsFiltered; let i = index" [expanded]="step === i" (opened)="setStep(i)">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title flex fxLayout="row" fxLayoutAlign="start center">
+                            <mat-icon class="mr-8">help_outline</mat-icon>
+                            {{faq.question}}
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    {{faq.answer}}
+                </mat-expansion-panel>
+            </mat-accordion>
+
+        </div>
+
+    </div>
+
 </section>

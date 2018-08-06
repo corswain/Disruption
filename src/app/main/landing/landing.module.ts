@@ -24,7 +24,10 @@ import { WhitepaperComponent } from './whitepaper/whitepaper.component';
 const routes: Routes = [
   {
     path: '',
-    component: LandingComponent
+    component: LandingComponent,
+    resolve: {
+      faq: LandingService
+    }
   }
 ];
 
