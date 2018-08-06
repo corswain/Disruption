@@ -7,10 +7,6 @@ const routes: Routes = [
     loadChildren: './main/landing/landing.module#LandingModule'
   },
   {
-    path: 'sample',
-    redirectTo: 'sample'
-  },
-  {
     path: 'errors',
     loadChildren: './main/errors/errors.module#ErrorsModule'
   },
